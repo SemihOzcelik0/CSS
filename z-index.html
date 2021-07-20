@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta charset="UTF-8">
+        <title>İnstagram</title>
+        <meta name="width=device-width , inital-scale=1">
+        <meta name="keywords" content="İnstagram">
+        <meta name="description" content="İnstagram">
+        <link rel="shortcut icon" href="photos/favicon.ico">
+        <style>
+            div{
+                border-style: solid;
+                border-color: blueviolet;
+            }
+            #buyuk{
+                background-color: chartreuse;
+                width: 200px;
+                height: 80px;
+                z-index: 1;                         /*z-index'i büyük olan diğerinin üstüne çıkar*/
+            }
+            #kucuk{
+                background-color: crimson;
+                width: 140px;
+                height: 50px;
+                position: relative;
+                top: 50px;
+                left: 25px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>  
+        <div id="buyuk">
+            <div id="kucuk">
+
+            </div>
+        </div>
+    </body>
+</html>
